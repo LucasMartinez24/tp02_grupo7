@@ -12,7 +12,7 @@ public class punto5_TP02Controller {
   public String getPunto(Model model){
     CadenaReverso revers = new CadenaReverso();
     revers.setAux("Hola mundo!");
-    model.addAttribute("cadena", revers.getAux());
+    model.addAttribute("nombre", revers.getAux());
     model.addAttribute("invertida",revers.Reverso());
     return "Punto5_TP02";
   }
